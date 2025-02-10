@@ -1,5 +1,5 @@
 def threeSumClosest(nums, target):
-    nums.sort()  # Sorting the array first
+    nums.sort()
     closest_sum = float('inf')
 
     for i in range(len(nums) - 2):
@@ -14,12 +14,11 @@ def threeSumClosest(nums, target):
             elif total > target:
                 right -= 1
             else:
-                return total  # The exact target sum found
+                return total
 
     return closest_sum
 
 
-# Example usage
 nums = [-1, 2, 1, -4]
 target = -100
 print(threeSumClosest(nums, target))  # Output: 2

@@ -22,5 +22,5 @@ def letter_combinations(digits):
         backtrack("", digits)
     return output
 
-# Example usage
+
 print(letter_combinations("23"))  # Output: ['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf']
